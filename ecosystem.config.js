@@ -32,13 +32,13 @@ module.exports = {
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   deploy: {
-    production: {
+    dev: {
       user: 'root',
       host: '47.97.186.246',
       port: '50019',
       ref: 'origin/master',
-      repo: 'git@code.aliyun.com:qianbao/xcqb-m.git',
-      path: '/root/pm2_xcqbm',
+      repo: 'https://github.com/tangxuelei/tangxuelei.github.io.git',
+      path: '/root/tangxueleiio',
       'post-deploy': ''
       // 'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
     }
